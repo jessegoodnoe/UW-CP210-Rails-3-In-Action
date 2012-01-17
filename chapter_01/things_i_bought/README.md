@@ -1,0 +1,1 @@
+The exercises from Rails 3 in Action chapter 1.
