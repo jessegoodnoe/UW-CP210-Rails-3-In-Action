@@ -1,0 +1,1 @@
+This is a simple example that exercises learnings from Rails 3 In Action chapter 1. It's essentially the things_i_bought app, but my own twist.

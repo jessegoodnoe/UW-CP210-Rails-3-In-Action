@@ -1,0 +1,1 @@
+These are the exercises from Rails 3 in Action. I worked through them as a part of the UW CP210 Rails course.
