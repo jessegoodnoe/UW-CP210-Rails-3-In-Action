@@ -24,6 +24,7 @@ group :test, :development do
   gem 'guard-rspec'
   gem 'guard-cucumber'
   gem 'guard-bundler'
+	gem 'ruby_gntp'
 end
 
 group :test do
