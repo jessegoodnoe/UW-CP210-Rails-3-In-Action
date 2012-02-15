@@ -31,6 +31,7 @@ group :test, :development do
   gem 'guard-cucumber'
   gem 'guard-bundler'
 	gem 'ruby_gntp'
+	gem 'pry'
 end
 
 group :test do
