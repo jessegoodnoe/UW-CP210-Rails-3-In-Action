@@ -32,6 +32,8 @@ group :test, :development do
   gem 'guard-bundler'
 	gem 'ruby_gntp'
 	gem 'pry'
+	gem 'capybara-webkit'
+	gem 'launchy'
 end
 
 group :test do
