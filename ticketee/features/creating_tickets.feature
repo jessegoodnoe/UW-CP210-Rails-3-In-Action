@@ -47,3 +47,20 @@ I want to be able to select a project and do that
 		And I should see "speed.txt" within "#ticket .assets"
 		And I should see "spin.txt" within "#ticket .assets"
 		When I follow "speed.txt"
+
+	@javascript
+	Scenario: Cause webkit to halt when downloading a file
+		When I fill in "Title" with "Oh no, webkit is waiting."
+		And I fill in "Description" with "It won't click on the OK button!"
+		And I attach the file "spec/fixtures/speed.txt" to "File #1"
+		And I press "Create Ticket"
+		Then I should see "Ticket has been created."
+		When I follow "speed.txt"
+
+	Scenario: Same test as above, but without @javascript
+		When I fill in "Title" with "Oh no, webkit is waiting."
+		And I fill in "Description" with "It won't click on the OK button!"
+		And I attach the file "spec/fixtures/speed.txt" to "File #1"
+		And I press "Create Ticket"
+		Then I should see "Ticket has been created."
+		When I follow "speed.txt"
