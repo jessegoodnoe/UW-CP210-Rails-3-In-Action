@@ -1,0 +1,1 @@
+This is the ticketee application from the Rails 3 In Action book. I'm working through the whole book chapter by chapter for the University of Washington Rails course.
