@@ -49,7 +49,8 @@ I want to be able to select a project and do that
 		When I follow "speed.txt"
 		
 		Scenario: Creating a ticket with tags
-			When I fill in "Title" with "Non-standards compliance"
+			When "user@ticketee.com" can tag the "Internet Explorer" project
+			And I fill in "Title" with "Non-standards compliance"
 			And I fill in "Description" with "My pages are ugly!"
 			And I fill in "Tags" with "browser visual"
 			And I press "Create Ticket"
