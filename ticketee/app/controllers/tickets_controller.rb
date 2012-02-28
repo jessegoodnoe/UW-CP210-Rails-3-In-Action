@@ -50,7 +50,12 @@ class TicketsController < ApplicationController
     flash[:notice] = "Ticket has been deleted."
     redirect_to @project
   end
-      
+  
+  def search
+    @tickets = @project.tickets.search(params[:search])
+    render "projects/show"
+  end
+        
 private
   def find_project
     @project = Project.for(current_user).find(params[:project_id])
